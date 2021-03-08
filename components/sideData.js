@@ -46,7 +46,7 @@ function SideData(){
                         return <li className="mt-2" key={each.key}>{ each.key }{' : '}<span className="text-gray-400">{ each.doc_count }</span></li>
                     })}
                 </ul>
-                <button onClick={openModal} className="text-blue-600 focus:border-none">show more...</button>
+                <button onClick={openModal} className="text-blue-600 focus:border-none focus:outline-none">show more...</button>
             </div>
             <div className="w-full m-2 bg-white p-3">
                 <span className="font-bold">WORK SCHEDULE</span>
@@ -74,7 +74,7 @@ function SideData(){
               >
                 <div className="flex">
                     <h2  className="w-6/12 text-gray-600 mt-4 font-bold">Department</h2>
-                    <button onClick={closeModal} className="flex w-6/12 justify-end mb-4 text-4xl">&times;</button>
+                    <button onClick={closeModal} className="flex w-6/12 justify-end mb-4 text-4xl focus:outline-none">&times;</button>
                 </div>
                 <hr/>
                 <ul className="grid grid-cols-4">
